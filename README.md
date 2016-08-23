@@ -18,10 +18,18 @@ Then, install the dependencies:
 composer install
 ```
 
+The next step is setting your application key:
+
+```bash
+php artisan key:generate
+```
+
+You also need to make sure you web server can write to the directories within the `storage/` and `bootstrap/cache/` directories, otherwise the application will not run.
+
 ## Configuration
 
 The only configuration needed is your database credentials, which you'll need to put in your `.env` file.
-To do this just make a copy of `.env.example` and save it as `.env`, then put your database credentials into place.
+To do this, just make a copy of `.env.example` and save it as `.env`, then put your database credentials in place.
 
 ## Migration
 
@@ -41,18 +49,20 @@ php -S localhost:8000 -t public
 
 The parameter `-t public` option refers to the application's public directory - where `index.php` resides.
 
+As a result, the application will be accessible via `http://localhost:8000`.
+
 ## Fetching the Events in JSON format
 
- Crunz-Ui alsp provides a sample route for fetching the added events. To get the events in JSON format, just access this URL:  `http://localhost:8000/api/v1/tasks`
+ Crunz-Ui also provides a sample endpoint for fetching the stored events in the database; To get the events in JSON format, just access this URL:  `http://localhost:8000/api/v1/tasks`
 
 ## Sample Task File
 
-There is also a sample task file in `tasks/` directory, which shows how to create an event with the task builder.
+There is also a sample "dynamic" task file in `tasks/` directory, which shows how to create the events by using the Crunz-Ui task builder.
 
 
 ## Authentiction
 
-Crunz-Ui doesn't implemented any authentication system. Feel free to implement your desired authentication mechanism for your instance.
+Crunz-Ui doesn't implement any authentication system. Feel free to implement your desired authentication mechanism for your instance.
 
 ## If You Need Help
 
