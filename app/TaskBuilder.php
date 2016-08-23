@@ -36,6 +36,23 @@ class TaskBuilder {
      */
      public function generate()
      {        
+        $this->event->description($this->task->description);
+
+         // Set current working directory
+        if ($this->task->run_in) {
+            $this->event->in($this->task->run_in);
+        }
+
+        // If prevent overlapping is set
+        if ($this->task->prevent_overlapping) {
+            $this->event->preventOverlapping();
+        }
+
+        // If event has a dedicated log file
+        if ($this->task->output_log) {
+            $this->event->appendOutputTo($this->task->output_log);
+        }
+
         //Since we have different method for setting the frequency of execution
         //we check whether user has set custom or the preset frequency.
         //First, we check if it's a custom frequency which consists of unit time and value

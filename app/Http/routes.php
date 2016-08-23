@@ -32,27 +32,3 @@ Menu::make('navlinks', function ($t) {
     $t->tasks->add('Scheduled Tasks', ['route' => 'tasks.index']);
     $t->tasks->add('New Task',        ['route' => 'tasks.create']);
 });
-
-Route::get('test', function() {
-
-    // Fetch data from the API
-$tasks = json_decode(
-        (new GuzzleHttp\Client())->get('http://laravel/api/v1/tasks')->getBody(),
-            false
-        );
-
-$sch = new Crunz\Schedule();
-
-foreach ($tasks as $task) {    
-    $task = (object) $task;
-    (new App\TaskBuilder(
-        $task,
-        $sch->run($task->run)
-    ))
-    ->generate();
-}
-
-foreach($sch->events() as $event) {
-    echo $event->getExpression();
-}
-});
