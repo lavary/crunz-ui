@@ -39,6 +39,10 @@ The parameter `-t public` option refers to the application's public directory - 
 
  Crunz-Ui alsp provides a sample route for fetching the added events. To get the events in JSON format, just access this URL:  `http://localhost:8000/api/v1/tasks`
 
+## Sample Task File
+
+There is also a sample task file in `tasks/` directory, which shows how to create an event with the task builder.
+
 
 ## Authentiction
 
