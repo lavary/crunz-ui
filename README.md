@@ -9,7 +9,7 @@ This is a web-based interface for [Crunz](https://github.com/lavary/crunz) libra
 To install it, clone it:
 
 ```bash
-git@github.com:lavary/crunz-ui.git
+git clone git@github.com:lavary/crunz-ui.git .
 ```
 
 Then, install the dependencies:
