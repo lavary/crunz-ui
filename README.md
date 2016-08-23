@@ -4,10 +4,10 @@ This is a web-based interface for [Crunz](https://github.com/lavary/crunz) libra
 
 ## Installation
 
-To install it, just clone it:
+To install it, clone it:
 
 ```bash
-git clone 
+git@github.com:lavary/crunz-ui.git
 ```
 
 ## Configuration
