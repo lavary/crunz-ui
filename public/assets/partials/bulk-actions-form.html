@@ -1,0 +1,12 @@
+<form id="bulk-actions-form" action="{{action.url}}" method="post">        
+    
+    <input type="text" name="_method" ng-if="form.verb != null" ng-model="form.verb" class="sr-only">  
+    <input type="text" name="_token"  ng-model="csrf_token" class="sr-only">
+    
+    <div class="form-group">
+        <div class="form-inline">
+            <select ng-model="action" ng-options="action as action.label for action in actions" class="form-control"></select>
+            <button type="submit" class="btn btn-warning" should-confirm>Perform</button>
+        </div><!--/form-inline-->
+    </div>
+</form>   

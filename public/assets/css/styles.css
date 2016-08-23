@@ -1,0 +1,123 @@
+body { background: url(../img/square_bg.png); }
+h1 { color: #888; }
+h1 .glyphicon {
+    padding-top: 10px;
+    color: #ccc;
+}
+
+.container { margin: 100px auto 50px; }
+
+
+/*
+Text Colros
+*/
+
+.txt-neph { color: #27ae60 !important; }
+.txt-ali { color: #e74c3c  !important; }
+
+/*
+Custom badge colors
+*/
+.badge-green { background: #d35400 }
+.panel-green { border-color: #34495e; }
+
+/*
+Alignment styles
+*/
+
+.rightmost { text-align: right; }
+.leftmost  { text-align: left; }
+.middle    { text-align: center; }
+
+/*
+Table related styles
+*/
+
+table tr:hover .action-btns * { visibility: visible; }
+table td form { display: inline-block; }
+thead th { color: #888; }
+td.td-indicator { font-size: 15pt; }
+
+.btn-xs .glyphicon { 
+    margin: 2px 0  0 -2px;
+    padding: 0 2px;
+}
+
+.action-btns * {
+    visibility: hidden;
+}
+
+#new-btn { margin-top: 30px; }
+
+#bulk-actions-form {
+    float: right;
+    margin-top: 30px;
+    text-align: right;
+}
+
+#bulk-actions-form select {
+    width: 200px;
+}
+
+#list-tbl td.no-entry {
+    height: 150px;
+    line-height: 150px;
+    color: #ccc;
+    font-size: 20pt;
+    text-align: center;
+}
+
+/*
+Form related styles
+*/
+
+.form-group label { color: #888; }
+.input-group-addon .glyphicon { color: #ccc; }
+#quick-inline select {
+    width: 100px;
+    margin: 0 1px !important;
+}
+#custom-inline input[type="text"], #custom-inline select {
+    width: 90px;
+    margin: 0 1px !important;
+}
+.form-inline .input-group { margin: 0 3px; }
+
+#code-area textarea {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+}
+
+.badge {
+    background: #1abc9c;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 8pt;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 3px;
+}
+
+.panel-green .panel-heading {
+    background: #34495e;
+    color: #fff;
+    border-color: #34495e;
+}
+.panel-green .panel-body { padding: 0; }
+
+/*
+Breadcrumb
+*/
+.breadcrumb { margin: 25px 0; }
+
+
+/*
+Navigation
+*/
+.dropdown li a .glyphicon {
+    font-size: 9pt;
+    color: #ccc;
+}
