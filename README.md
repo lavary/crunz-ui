@@ -12,6 +12,12 @@ To install it, clone it:
 git@github.com:lavary/crunz-ui.git
 ```
 
+Then, install the dependencies:
+
+```bash
+composer install
+```
+
 ## Configuration
 
 The only configuration needed is your database credentials, which you'll need to put in your `.env` file.
