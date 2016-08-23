@@ -2,7 +2,7 @@
 
 This is a web-based interface for [Crunz](https://github.com/lavary/crunz) library -  implemented by Laravel framework.
 
-![Screenshot](public/assets/imgform-screenshot.png)
+![Screenshot](public/assets/img/form-screenshot.png)
 
 ## Installation
 
