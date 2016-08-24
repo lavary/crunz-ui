@@ -57,7 +57,7 @@ As a result, the application will be accessible via `http://localhost:8000`.
 
 ## Sample Task File
 
-There is also a sample "dynamic" task file in `tasks/` directory, which shows how to create the events by using the Crunz-Ui task builder.
+There is also a sample "dynamic" task file in `tasks/` directory, which shows how the fetched records are converted to events using the task builder. You can just copy this file and change the endpoint URL or create your own.
 
 
 ## Authentiction
