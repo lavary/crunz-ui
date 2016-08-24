@@ -1,6 +1,6 @@
 # crunz-ui
 
-This is a web-based interface for [Crunz](https://github.com/lavary/crunz) library -  implemented by Laravel framework.
+This is a web-based interface for [Crunz](https://github.com/lavary/crunz) library -  implemented with Laravel.
 
 ![Screenshot](public/assets/img/crunz-form-screenshot.png)
 
