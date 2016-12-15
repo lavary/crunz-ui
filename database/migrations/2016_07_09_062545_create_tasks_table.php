@@ -19,7 +19,7 @@ class CreateTasksTable extends Migration
             $table->string('unit_key')->nullable();
             $table->integer('unit_value')->nullable();
             $table->time('run_at')->nullable();
-            $table->string('weekday')->nullable();
+            $table->string('day_of_week')->nullable();
             $table->string('cron_expression')->nullable();
             $table->text('description')->nullable();
             $table->date('run_date')->nullable();
